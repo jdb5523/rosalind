@@ -1,0 +1,5 @@
+data = open("data.txt", "r")
+lineone = data.readline().strip()
+linetwo = data.readline().strip()
+result = sum(a != b for a, b in zip(lineone, linetwo))
+print(result)
